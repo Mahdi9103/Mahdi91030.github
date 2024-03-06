@@ -1,0 +1,68 @@
+<html>
+<head>
+    
+	<style>
+	  header {
+            background-color: black;
+            color: yellow;
+            padding: 10px;
+            text-align: left;
+          
+			
+        }
+	<link rel="stylesheet" href="styles.css">
+	</style>
+    <title>Contact Me</title>
+</head>
+<body>
+    <header>
+        <h1><b><i>Contact Me</i></b></h1>
+    </header>
+
+     <section class="contact-form">
+
+   <h2><center> <div class="container">
+        <form action="#" method="post">
+          <label for="fullname"><b>Full Name: </b></label>
+            <input type="text" id="fullname" name="fullname" required><br><br>
+
+            <label for="email"><b>Email Address: </b></label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="country"><b>Country: </b></label>
+            <input type="text" id="country" name="country" required><br><br>
+
+            <label for="comments"><b>Comments: </b></label><br>
+            <textarea id="comments" name="comments" rows="2" required></textarea><br><br>
+
+           <input type="submit" value="Submit">
+        </form>
+		 <div id="submission-message"></div>
+		 </section>
+		 
+   
+	<script>
+        function displaySubmissionMessage() {
+            
+            event.preventDefault();
+
+           
+            var messageDiv = document.getElementById("submission-message");
+            messageDiv.innerHTML = "Submission done";
+            messageDiv.className = "submission-message";
+
+             
+            document.getElementById("full-name").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("country").value = "";
+            document.getElementById("comments").value = "";
+        }
+    </script>
+  </div></center></h2>
+  <center><a href="index.html"><b><u><h1><button>Contact me page</button></h1> </u></b></a></center>
+</body>
+</html>
+
+
+
+
